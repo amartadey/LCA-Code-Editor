@@ -277,12 +277,6 @@ if (choice) {
     codeeditorjs.setOption("theme", theme)
 }
 var $win = $(window);
-$(window).load(function() {
-    $("#loader").fadeOut()
-});
-$(window).unload(function() {
-    $("#loader").fadeIn()
-});
 jQuery(function(e) {
     $win.resize(resize);
     e("#widget").width($win.width()).height($win.height() - 50).split({
